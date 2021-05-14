@@ -1,0 +1,40 @@
+﻿<Window x:Class="Storage.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Storage"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="800" HorizontalAlignment="Center" HorizontalContentAlignment="Center" WindowStartupLocation="CenterScreen" WindowStyle="ThreeDBorderWindow">
+
+    <Grid x:Name="MainPanel">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition Width="160"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="BtnProduct" Content="Товары" Grid.Column="0" HorizontalAlignment="Center" Margin="16,25,19,16.2" VerticalAlignment="Center" Width="125" Height="30px" Click="BtnProduct_Click"/>
+        <Button x:Name="BtnCounteragent" Content="Контрагенты" Grid.Column="1" HorizontalAlignment="Center" Margin="14,25,22,16.2" VerticalAlignment="Center" Width="124" Height="30px" Click="BtnCounteragent_Click"/>
+        <Button Content="Товары на складе" Grid.Column="2" HorizontalAlignment="Left" Margin="11,25,0,16.2" VerticalAlignment="Center" Width="125" Height="30px" x:Name="ProductStorage" Click="ProductStorage_Click"/>
+        <Button Content="Закупки" Grid.Column="3" HorizontalAlignment="Left" Margin="11,25,0,16.2" VerticalAlignment="Center" Width="125" Height="30px" x:Name="BtnComing" Click="BtnComing_Click"/>
+        <Button Content="Продажи" Grid.Column="4" HorizontalAlignment="Left" Margin="8,24,0,17.2" VerticalAlignment="Center" Width="125" Height="30px" x:Name="BtnPurchase" Click="BtnPurchase_Click"/>
+
+
+        <Frame Height="500" Width="760" x:Name ="FrameContent" Grid.ColumnSpan="5" Grid.Row="1" Grid.RowSpan="7" Margin="-4,15,4,72.543" />
+
+
+    </Grid>
+
+</Window>
